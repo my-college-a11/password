@@ -1,13 +1,73 @@
+/* Body Styling to center everything */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0a0f25; /* Soft, modern background */
+  font-family: 'Arial', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Container styling */
+.container {
+  width: 350px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Clean white background */
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.5); /* 3D effect shadow */
+  text-align: center;
+}
+
+/* Heading styling */
+h4 {
+  font-size: 1.4rem;
+  color: #333333; /* Darker grey for contrast */
+  margin-bottom: 20px;
+}
+
+/* Password container styling */
+.pwd-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Input field styling */
+input[name="pwd"] {
+  width: 70%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  height: 45px; /* Set the height to match the button */
+}
+
+input[name="pwd"]:focus {
+  border-color: #1e90ff; /* Dodger Blue */
+  box-shadow: 0 0 8px rgba(30, 144, 255, 0.4); /* Blue glow */
+}
+
+/* Button styling */
+button {
+  width: 30%; /* Same width as the remaining space next to the input */
+  height: 45px; /* Same height as input */
+  padding: 0; /* No extra padding needed */
+  border: none;
+  border-radius: 8px;
+  background-color: #1e90ff; /* Dodger Blue */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #187bcd; /* Slightly darker blue on hover */
 }
